@@ -23,8 +23,9 @@ jobs:
       - name: Validate required files
         run: |
           test -f index.html
-          test -f styles.css
-          test -f app.js
+          test -f styles-v5.css
+          test -f premium-v5.css
+          test -f app-v5.js
           test -f assets/logo.svg
           test -f brand/BRAND.md
 
@@ -40,7 +41,8 @@ jobs:
       - name: Build clean static artifact
         run: |
           mkdir -p _site/assets
-          cp index.html styles.css app.js 404.html .nojekyll _site/
+          cp index.html 404.html .nojekyll _site/
+          cp *.css *.js _site/
           cp -R assets/. _site/assets/
       - name: Configure Pages
         uses: actions/configure-pages@v5
