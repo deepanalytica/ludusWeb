@@ -1,25 +1,34 @@
-Thanks for downloading this theme!
+# JUEGA M²
 
-## Other Useful Links
+Landing y configurador inicial de **JUEGA M²**, un servicio para transformar patios, terrazas, muros y rincones pequeños en espacios activos infantiles.
 
-**ThemeWagon** is a great source for downloading free HTML templates built with the latest technology.
+## Marca
+Ver [`brand/BRAND.md`](brand/BRAND.md).
 
-To download free templates, follow this link: https://themewagon.com/theme_tag/free/
+## Desarrollo local
+Sitio estático: puedes abrir `index.html` o servirlo con:
 
-Besides that, you can buy our premium templates for making your web development experience unforgettable.
+```bash
+python3 -m http.server 8080
+```
 
-Visit the store from here: https://themewagon.com/theme-categories/premium-templates/
+## GitHub Pages
+El workflow `.github/workflows/deploy-pages.yml` publica el sitio cuando hay cambios en `main`.
 
-Alternatively, here's our top most trending and selling items:
+El repositorio debe tener GitHub Pages configurado una vez con **Source: GitHub Actions** desde Settings → Pages.
 
-* [**Sparrow**](https://themewagon.com/themes/sparrow/) - A multipurpose template made with Bootstrap 4.1 and world's finest animation.
-* [**Posh**](https://themewagon.com/themes/posh-html5-bootstrap-4-template/) - Bootstrap 4 template with a myriad number of ready-to-deploy sections. 
-* [**Elixir**](https://themewagon.com/themes/elixir-elegant-html5-bootstrap-template-consultancy-agency-website/) - Bootstrap 4 agency template. Best for smooth animated scrolling. 
-* [**Freya**](https://themewagon.com/themes/bootstrap-4-premium-interior-design-template-freya/) - Interior design template made with Bootstrap 4. 
-* [**Reign Pro**](https://themewagon.com/themes/reign-pro-premium-corporate-agency-html5-template/) - A corporate template with a visually unique design scheme. 
-* [**Boots4**](https://themewagon.com/themes/first-ever-bootstrap-4-template/) - One of the first Bootstrap 4 templates ever made on earth. 
-* [**Hideaway**](https://themewagon.com/themes/hideaway/) - A template for resorts. Built with Bootstrap 4. 
-* [**Baikal**](https://themewagon.com/themes/bootstrap-4-startup-small-business-website-template/) - A smart Bootstrap template for start-up. 
-* [**Mega Discount**](https://themewagon.com/themes/mega-discount-bundle/) - A bundle of 26 HTML5 templates; best value for your money. 
+## Cloudflare
+La arquitectura de producción y la siguiente etapa de carga/generación de imágenes están en [`cloudflare/ARCHITECTURE.md`](cloudflare/ARCHITECTURE.md).
 
+## Estado v1
+- landing responsive;
+- catálogo tipo marketplace;
+- estimador referencial;
+- upload local de fotografía;
+- selector de pack y complementos;
+- referencias visuales;
+- accesibilidad básica;
+- workflow de GitHub Pages;
+- arquitectura preparada para Cloudflare.
 
+La versión actual **no envía fotografías a un servidor** ni genera todavía una transformación IA sobre la foto subida. Esa capacidad debe ir detrás de Cloudflare Pages Functions/Workers para proteger credenciales y tratar las fotografías de forma controlada.
