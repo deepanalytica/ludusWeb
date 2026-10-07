@@ -1,428 +1,539 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-	<title>Arcade - Architecture</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="Arcade - Architecture Template">
-	<meta name="keywords" content="arcade, architecture, onepage, creative, html">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Favicon -->   
-	<link href="img/favicon.ico" rel="shortcut icon"/>
-
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/animate.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
-
-
-	<!--[if lt IE 9]>
-	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="theme-color" content="#0F172A"/>
+  <meta name="description" content="JUEGA M² transforma patios, terrazas y rincones pequeños en espacios activos infantiles diseñados, fabricados e instalados a medida."/>
+  <title>JUEGA M² — Espacios que empiezan a jugar</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="premium.css"/>
 </head>
 <body>
-	<!-- Page Preloder -->
-	<div id="preloder">
-		<div class="loader"></div>
-	</div>
-	
-	<!-- Header section start -->   
-	<header class="header-area">
-		<a href="home.html" class="logo-area">
-			<img src="img/logo.png" alt="">
-		</a>
-		<div class="nav-switch">
-			<i class="fa fa-bars"></i>
-		</div>
-		<div class="phone-number">+675 334 567 223</div>
-		<nav class="nav-menu">
-			<ul>
-				<li class="active"><a href="home.html">Home</a></li>
-				<li><a href="about.html">About us</a></li>
-				<li><a href="service.html">Services</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<!-- Header section end -->   
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header" id="top">
+  <div class="shell nav-wrap">
+    <a class="brand" href="#top" aria-label="JUEGA M2"><img src="assets/logo.svg" alt="JUEGA M2"/></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+      <a href="#dolor">El problema</a>
+      <a href="#etapas">Por etapa</a>
+      <a href="#marketplace">Marketplace</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#seguridad">Seguridad</a>
+    </nav>
+    <a class="button button-primary nav-cta" href="#studio">Sube una foto</a>
+  </div>
+</header>
+
+<main id="contenido">
+  <section class="hero">
+    <div class="shell hero-grid">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span></span> PARA ESOS DÍAS EN QUE TÚ YA NO PUEDES SEGUIRLES EL RITMO</div>
+        <h1>Tu hijo todavía quiere correr, trepar y saltar.<br><em>Tú ya llegaste cansado.</em></h1>
+        <p class="hero-lede">Y ese patio pequeño termina siendo una pelota, una silla y la misma pregunta: <strong>“¿a qué jugamos ahora?”</strong> JUEGA M² convierte los metros que ya tienes en un espacio preparado para moverse, explorar y jugar a su escala.</p>
+
+        <div class="hero-start">
+          <span class="mini-label">¿Qué espacio quieres transformar?</span>
+          <div class="segmented" id="spaceType">
+            <button class="active" type="button" data-space="Patio">Patio</button>
+            <button type="button" data-space="Terraza">Terraza</button>
+            <button type="button" data-space="Dormitorio">Dormitorio</button>
+            <button type="button" data-space="Otro">Otro</button>
+          </div>
+          <button class="button button-primary button-lg hero-upload" id="heroUpload" type="button">Subir foto de mi espacio <span>↗</span></button>
+          <p class="privacy-note">La foto permanece en tu dispositivo en esta demo. Sin registro.</p>
+        </div>
+
+        <div class="hero-proof">
+          <div><strong>No necesitas inventar actividades</strong><span>El espacio ya propone qué hacer.</span></div>
+          <div><strong>No necesitas un patio enorme</strong><span>Diseñamos a la escala del niño.</span></div>
+          <div><strong>No improvisamos seguridad</strong><span>Revisamos soporte, anclajes y zona de caída.</span></div>
+        </div>
+      </div>
+
+      <div class="hero-media reveal">
+        <div class="hero-photo">
+          <img src="assets/pack-active.webp" alt="Patio transformado con muro de escalada, red, espaldera y aro"/>
+          <div class="photo-overlay"></div>
+          <div class="photo-topline"><span class="live-dot"></span> ACTIVO 6 · CONCEPTO</div>
+          <div class="photo-caption"><strong>Mismo patio.</strong><span>Más juego. Más movimiento. El centro sigue libre.</span></div>
+        </div>
+        <div class="before-card">
+          <img src="assets/before.webp" alt="Patio antes de la transformación"/>
+          <span>ANTES</span>
+        </div>
+        <div class="metric-card">
+          <small>Configuraciones desde</small>
+          <strong>$299 mil</strong>
+          <span>diseño + fabricación + instalación*</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="flow-strip">
+    <div class="shell">
+      <div><span>01</span><strong>Sube una foto</strong></div>
+      <i>→</i>
+      <div><span>02</span><strong>Recibe propuestas</strong></div>
+      <i>→</i>
+      <div><span>03</span><strong>Elige configuración</strong></div>
+      <i>→</i>
+      <div><span>04</span><strong>Fabricamos e instalamos</strong></div>
+    </div>
+  </section>
 
 
-	<!-- Hero section start -->
-	<section class="hero-section">
-		<!-- left social link ber -->
-		<div class="left-bar">
-			<div class="left-bar-content">
-				<div class="social-links">
-					<a href="#"><i class="fa fa-pinterest"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-instagram"></i></a>
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-				</div>
-			</div>
-		</div>
-		<!-- hero slider area -->
-		<div class="hero-slider">
-			<div class="hero-slide-item set-bg" data-setbg="img/bg.jpg">
-				<div class="slide-inner">
-					<div class="slide-content">
-					<h2>Minimalistic <br>Architecture <br> and more</h2>
-					<a href="#" class="site-btn sb-light">See Project</a>
-					</div>	
-				</div>
-			</div>	
-			<div class="hero-slide-item set-bg" data-setbg="img/bg.jpg">
-				<div class="slide-inner">
-					<div class="slide-content">
-					<h2>Minimalistic <br>Architecture <br> and more</h2>
-					<a href="#" class="site-btn sb-light">See Project</a>
-					</div>	
-				</div>
-			</div>	
-		</div>
-		<div class="slide-num-holder" id="snh-1"></div>
-		<div class="hero-right-text">architecture</div>
-	</section>
-	<!-- Hero section end -->
+  <section id="dolor" class="pain-section section-pad">
+    <div class="shell">
+      <div class="pain-intro reveal">
+        <span class="kicker">ESTO PASA TODOS LOS DÍAS</span>
+        <h2>Tú quieres compartir con él.<br>Él todavía tiene energía para una hora más.</h2>
+        <p>No falta cariño ni ganas. Muchas veces faltan tiempo, ideas y un lugar preparado. Cuando el espacio no ayuda, el adulto termina inventando sobre la marcha y el niño vuelve a correr por la casa.</p>
+      </div>
 
+      <div class="pain-grid">
+        <article class="pain-card reveal">
+          <span>18:30</span>
+          <h3>Llegas cansado del trabajo.</h3>
+          <p>Quieres estar con tu hijo, pero no siempre tienes energía para organizar una actividad distinta cada tarde.</p>
+        </article>
+        <article class="pain-card reveal">
+          <span>POCOS M²</span>
+          <h3>Miras el patio y parece que “no cabe nada”.</h3>
+          <p>Entonces todo se reduce a una pelota, una bicicleta o dar vueltas por el mismo lugar.</p>
+        </article>
+        <article class="pain-card reveal">
+          <span>MUCHA ENERGÍA</span>
+          <h3>Él todavía quiere saltar, subir, colgarse y probar.</h3>
+          <p>El cuerpo del niño pide movimiento y juego activo; la casa rara vez está pensada para ofrecérselo de forma ordenada.</p>
+        </article>
+        <article class="pain-card reveal">
+          <span>LA MISMA DUDA</span>
+          <h3>“¿Qué hacemos ahora?”</h3>
+          <p>El problema no es tener un hijo inquieto. Es no contar con un espacio que convierta esa energía en juego, exploración y movimiento.</p>
+        </article>
+      </div>
 
-	<!-- Intro section start -->
-	<section class="intro-section pt100 pb50">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-7 intro-text mb-5 mb-lg-0">
-					<h2 class="sp-title">We are a creative Architecture<span>Studio</span></h2>
-					<p>Pellentesque lorem dolor, malesuada eget tortor vitae, tristique lacinia lectus. Pellentesque sed accumsan risus, id aliquam nulla. Integer lorem risus, feugiat at mauris malesuada, accumsan pellentesque ipsum. Nunc dapibus, libero ut pulvinar accumsan, tortor nisl iaculis ligula. Curabitur finibus dolor vel lectus pretium interdum a eget ante. Morbi rhoncus feugiat imperdiet. Curabitur non maximus leo. Nulla in ipsum sed magna egestas bibendum. Integer in sem sagittis, commodo mi sit amet, commodo nibh. Suspendisse potenti. Aliquam erat volutpat. </p>
-					<a href="#" class="site-btn sb-dark">See Project</a>
-				</div>
-				<div class="col-lg-5 pt-4">
-					<img src="img/intro.png" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Intro section end -->
+      <div class="pain-answer reveal">
+        <strong>La idea de JUEGA M² es simple:</strong>
+        <span>que el espacio haga parte del trabajo por ti.</span>
+      </div>
+    </div>
+  </section>
 
+  <section class="scale-section section-pad">
+    <div class="shell scale-grid">
+      <div class="scale-copy reveal">
+        <span class="kicker kicker-warm">PENSADO A SU ESCALA</span>
+        <h2>Para un niño, pocos metros pueden sentirse enormes.</h2>
+        <p>No necesita el mismo recorrido que un adulto. Un muro bajo, una rampa corta, una barra, una red o una zona blanda pueden ofrecer muchas acciones distintas en muy poca superficie: subir, bajar, cruzar, equilibrarse, lanzar, gatear, colgarse o descansar.</p>
+        <p class="scale-note">La propuesta cambia con la edad. No usamos el mismo sistema para un bebé que para un niño de 4, 7 o 10 años.</p>
+      </div>
+      <div class="scale-actions reveal">
+        <div><span>↥</span><strong>Subir</strong><small>trepa, escalada, rampas</small></div>
+        <div><span>↔</span><strong>Cruzar</strong><small>travesía y recorridos</small></div>
+        <div><span>○</span><strong>Equilibrar</strong><small>superficies y apoyos bajos</small></div>
+        <div><span>⌁</span><strong>Colgarse</strong><small>anillas y barras adecuadas</small></div>
+        <div><span>●</span><strong>Lanzar</strong><small>aro, pelota y puntería</small></div>
+        <div><span>✦</span><strong>Explorar</strong><small>texturas, formas y movimiento</small></div>
+      </div>
+    </div>
+  </section>
 
-	<!-- Service section start -->
-	<section class="service-section spad">
-		<div class="container">
-			<div class="section-title">
-				<h2>Services</h2>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-6">
-					<div class="service-box">
-						<div class="sb-icon">
-							<div class="sb-img-icon">
-								<img src="img/icon/dark/1.png" alt="">
-							</div>
-						</div>
-						<h3>Plans and Projects</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dui eget lorem tincidunt.</p>
-						<a href="#" class="readmore">READ MORE</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="service-box">
-						<div class="sb-icon">
-							<div class="sb-img-icon">
-								<img src="img/icon/dark/2.png" alt="">
-							</div>
-						</div>
-						<h3>Conceptual Architecture</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dui eget lorem tincidunt.</p>
-						<a href="#" class="readmore">READ MORE</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="service-box">
-						<div class="sb-icon">
-							<div class="sb-img-icon">
-								<img src="img/icon/dark/3.png" alt="">
-							</div>
-						</div>
-						<h3>Apartment Buildings</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dui eget lorem tincidunt.</p>
-						<a href="#" class="readmore">READ MORE</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="service-box">
-						<div class="sb-icon">
-							<div class="sb-img-icon">
-								<img src="img/icon/dark/4.png" alt="">
-							</div>
-						</div>
-						<h3>Skyscrapers Buildings</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dui eget lorem tincidunt.</p>
-						<a href="#" class="readmore">READ MORE</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="service-box">
-						<div class="sb-icon">
-							<div class="sb-img-icon">
-								<img src="img/icon/dark/5.png" alt="">
-							</div>
-						</div>
-						<h3>Documentation</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dui eget lorem tincidunt.</p>
-						<a href="#" class="readmore">READ MORE</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="service-box">
-						<div class="sb-icon">
-							<div class="sb-img-icon">
-								<img src="img/icon/dark/6.png" alt="">
-							</div>
-						</div>
-						<h3>Restauration Projects</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed dui eget lorem tincidunt.</p>
-						<a href="#" class="readmore">READ MORE</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Service section end -->
+  <section id="transformacion" class="compare-section section-pad">
+    <div class="shell compare-grid">
+      <div class="compare-copy reveal">
+        <span class="kicker">EL MISMO ESPACIO · OTRA VIDA</span>
+        <h2>No llenamos metros.<br>Los hacemos trabajar.</h2>
+        <p>La estrategia es llevar el juego al perímetro y a la altura para conservar la superficie central. Desliza y compara el mismo patio antes y después.</p>
+        <div class="compare-facts">
+          <div><strong>Perímetro activo</strong><span>escalada, red, suspensión</span></div>
+          <div><strong>Centro libre</strong><span>bicicleta, pelota, movimiento</span></div>
+          <div><strong>Crece por módulos</strong><span>agrega desafíos más adelante</span></div>
+        </div>
+      </div>
+
+      <div class="ba-slider reveal" id="beforeAfter">
+        <img class="ba-base" src="assets/pack-active.webp" alt="Patio después de la transformación"/>
+        <div class="ba-before" id="baBefore"><img src="assets/before.webp" alt="Patio antes de la transformación"/></div>
+        <div class="ba-divider" id="baDivider"><span>↔</span></div>
+        <div class="ba-label ba-label-before">ANTES</div>
+        <div class="ba-label ba-label-after">DESPUÉS</div>
+        <input id="baRange" type="range" min="0" max="100" value="48" aria-label="Comparar antes y después"/>
+      </div>
+    </div>
+  </section>
 
 
 
-	<!-- CTA section start -->
-	<section class="cta-section pt100 pb50">
-		<div class="cta-image-box"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-7 pl-lg-0 offset-lg-5 cta-content">
-					<h2 class="sp-title">Dare to dream of a modern <span>home</span></h2>
-					<p>Pellentesque lorem dolor, malesuada eget tortor vitae, tristique lacinia lectus. Pellentesque sed accumsan risus, id aliquam nulla. Integer lorem risus, feugiat at mauris malesuada, accumsan pellentesque ipsum. Nunc dapibus, libero ut pulvinar accumsan, tortor nisl iaculis ligula. Curabitur finibus dolor vel lectus pretium interdum a eget ante. </p>
-					<div class="cta-icons">
-						<div class="cta-img-icon">
-							<img src="img/icon/light/1.png" alt="">
-						</div>
-						<div class="cta-img-icon">
-							<img src="img/icon/light/2.png" alt="">
-						</div>
-						<div class="cta-img-icon">
-							<img src="img/icon/color/3.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- CTA section end -->
+  <section id="inspiracion" class="space-examples section-pad">
+    <div class="shell">
+      <div class="example-head reveal">
+        <div>
+          <span class="kicker">MIRA TU CASA CON OTROS OJOS</span>
+          <h2>¿Qué se puede hacer con pocos metros?</h2>
+        </div>
+        <p>Desde un rincón sensorial hasta un circuito exterior. La superficie cambia, pero la lógica es la misma: aprovechar mejor lo que ya tienes.</p>
+      </div>
+
+      <div class="example-rail">
+        <article class="example-card reveal" data-example="interior bebe">
+          <img src="assets/juega-cero.webp" alt="Rincón sensorial interior para bebé"/>
+          <div><span>2–3 m² · interior</span><strong>Rincón sensorial</strong><small>0–18 meses</small></div>
+        </article>
+        <article class="example-card reveal" data-example="interior nido">
+          <img src="assets/juega-nido.webp" alt="Espacio interior con rampa y estructura baja"/>
+          <div><span>3–4 m² · interior</span><strong>Primeros movimientos</strong><small>1–3 años</small></div>
+        </article>
+        <article class="example-card reveal" data-example="interior exterior muro">
+          <img src="assets/pack-mini.webp" alt="Muro compacto de escalada"/>
+          <div><span>4–6 m² · mixto</span><strong>Una pared activa</strong><small>2–6 años</small></div>
+        </article>
+        <article class="example-card reveal" data-example="terraza exterior">
+          <img src="assets/pack-active.webp" alt="Terraza o patio con escalada, red y espaldera"/>
+          <div><span>6–10 m² · exterior</span><strong>Terraza activa</strong><small>3–8 años</small></div>
+        </article>
+        <article class="example-card reveal" data-example="patio exterior">
+          <img src="assets/pack-adventure.webp" alt="Circuito infantil exterior"/>
+          <div><span>10–15 m² · exterior</span><strong>Circuito de patio</strong><small>4–10 años</small></div>
+        </article>
+        <article class="example-card example-upload reveal">
+          <div class="example-upload-inner">
+            <span class="upload-plus">＋</span>
+            <strong>¿Y en tu casa?</strong>
+            <small>Sube una foto y parte desde tu espacio real.</small>
+            <button type="button" id="exampleUpload">Subir mi foto →</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="etapas" class="stages section-pad">
+    <div class="shell">
+      <div class="section-head centered reveal">
+        <span class="kicker">NO JUEGAN IGUAL A TODAS LAS EDADES</span>
+        <h2>Un espacio que acompaña cada etapa.</h2>
+        <p>Partimos por lo que el niño puede hacer hoy y dejamos preparado el sistema para lo que vendrá después. El foco es ofrecer oportunidades de movimiento y exploración apropiadas para su edad, siempre con supervisión adulta.</p>
+      </div>
+
+      <div class="stage-grid">
+        <article class="stage-card reveal">
+          <div class="stage-age">0–18 meses</div>
+          <h3>JUEGA CERO</h3>
+          <p>Suelo, texturas, espejo seguro, objetos grandes y juego interactivo. Nada de trepar alto: aquí manda la exploración a ras de piso.</p>
+          <ul><li>Juego de suelo</li><li>Estimulación visual y táctil</li><li>Guardado accesible</li></ul>
+          <span class="stage-price">desde $299 mil</span>
+        </article>
+        <article class="stage-card reveal">
+          <div class="stage-age">1–3 años</div>
+          <h3>JUEGA NIDO</h3>
+          <p>Movimiento de baja altura para gatear, subir, bajar, empujar y equilibrarse dentro de un entorno controlado.</p>
+          <ul><li>Pikler / rampa baja</li><li>Equilibrio</li><li>Superficies blandas</li></ul>
+          <span class="stage-price">desde $449 mil</span>
+        </article>
+        <article class="stage-card reveal">
+          <div class="stage-age">2–6 años</div>
+          <h3>MINI 3</h3>
+          <p>La etapa en que ya quieren trepar, saltar y repetir desafíos una y otra vez. Una pared bien diseñada puede dar muchísimo juego.</p>
+          <ul><li>Escalada baja</li><li>Apoyo motriz</li><li>Zona amortiguante</li></ul>
+          <span class="stage-price">desde $749 mil</span>
+        </article>
+        <article class="stage-card reveal">
+          <div class="stage-age">3–8 años</div>
+          <h3>ACTIVO 6</h3>
+          <p>Más variedad: travesía, red, anillas y estaciones que invitan a combinar movimiento, fuerza y coordinación.</p>
+          <ul><li>Trepa y suspensión</li><li>Travesía</li><li>Juego activo</li></ul>
+          <span class="stage-price">desde $1,39 M</span>
+        </article>
+        <article class="stage-card reveal">
+          <div class="stage-age">4–10 años</div>
+          <h3>AVENTURA 10</h3>
+          <p>Para quienes ya necesitan recorridos, retos y pequeñas estaciones deportivas sin transformar todo el patio.</p>
+          <ul><li>Circuito</li><li>Aro / puntería</li><li>Más recorrido</li></ul>
+          <span class="stage-price">desde $2,39 M</span>
+        </article>
+      </div>
+
+      <p class="stage-disclaimer reveal">Los rangos de edad son orientativos. Cada instalación se adapta al niño, al espacio y al uso esperado. JUEGA M² no sustituye supervisión adulta ni evaluación profesional cuando corresponda.</p>
+    </div>
+  </section>
 
 
-	<!-- Milestones section Start -->
-	<section class="milestones-section spad">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-6">
-					<div class="milestone">
-						<h2>14</h2>
-						<p>Years <br>of <br>Experience</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="milestone">
-						<h2>237</h2>
-						<p>Projects <br>Taken</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="milestone">
-						<h2>11k</h2>
-						<p>Twitter <br>Followers</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="milestone">
-						<h2>12</h2>
-						<p>Awards <br>Won</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Milestones section end -->
+  <section id="marketplace" class="marketplace section-pad">
+    <div class="shell">
+      <div class="market-head reveal">
+        <div>
+          <span class="kicker">MARKETPLACE JUEGA M²</span>
+          <h2>Elige por etapa, espacio o tipo de movimiento.</h2>
+          <p>No compras una caja cerrada. Eliges una base y nosotros verificamos cómo adaptarla a tu casa.</p>
+        </div>
+        <div class="market-search">
+          <span>⌕</span>
+          <input id="marketSearch" type="search" placeholder="Buscar muro, red, interior, 3 años…" aria-label="Buscar en marketplace"/>
+        </div>
+      </div>
 
+      <div class="market-toolbar reveal">
+        <div id="marketFilters" class="market-filters">
+          <button class="active" type="button" data-filter="all">Todos</button>
+          <button type="button" data-filter="bebe">0–18 meses</button>
+          <button type="button" data-filter="nido">1–3 años</button>
+          <button type="button" data-filter="mini">2–6 años</button>
+          <button type="button" data-filter="activo">3–8 años</button>
+          <button type="button" data-filter="aventura">4–10 años</button>
+          <button type="button" data-filter="interior">Interior</button>
+          <button type="button" data-filter="exterior">Exterior</button>
+        </div>
+        <span class="market-count"><b id="marketCount">12</b> soluciones</span>
+      </div>
 
-	<!-- Projects section start -->
-	<div class="projects-section pb50">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3">
-					<div class="section-title">
-						<h1>Projects</h1>
-					</div>
-				</div>
-				<div class="col-lg-9">
-					<ul class="projects-filter-nav">
-						<li class="btn-filter" data-filter="*">All</li>
-						<li class="btn-filter" data-filter=".rest">Restaurations</li>
-						<li class="btn-filter" data-filter=".build">Buildings</li>
-						<li class="btn-filter" data-filter=".apart">Apartments</li>
-					</ul>
-				</div>
-			</div>
-		</div>                      
-		<div id="projects-carousel" class="projects-slider">
-			<div class="single-project set-bg rest" data-setbg="img/projects/1.jpg">
-				<div class="project-content">
-					<h2>Biggest <br> Restaurations</h2>
-					<p>Jan 19, 2018</p>
-					<a href="#" class="seemore">See Project </a>
-				</div>
-			</div>
-			<div class="single-project set-bg build" data-setbg="img/projects/2.jpg">
-				<div class="project-content">
-					<h2>Office <br> Building</h2>
-					<p>Jan 19, 2018</p>
-					<a href="#" class="seemore">See Project </a>
-				</div>
-			</div>
-			<div class="single-project set-bg apart" data-setbg="img/projects/3.jpg">
-				<div class="project-content">
-					<h2>Nice <br> Apartments</h2>
-					<p>Jan 19, 2018</p>
-					<a href="#" class="seemore">See Project </a>
-				</div>
-			</div>
-			<div class="single-project set-bg rest" data-setbg="img/projects/4.jpg">
-				<div class="project-content">
-					<h2>Biggest <br> Restaurations</h2>
-					<p>Jan 19, 2018</p>
-					<a href="#" class="seemore">See Project </a>
-				</div>
-			</div>
-			<div class="single-project set-bg apart" data-setbg="img/projects/2.jpg">
-				<div class="project-content">
-					<h2>Office <br> Building</h2>
-					<p>Jan 19, 2018</p>
-					<a href="#" class="seemore">See Project </a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Projects section end -->
+      <div class="market-grid">
+        <article class="market-card reveal" data-tags="bebe interior sensorial 0 18 meses">
+          <div class="market-photo">
+            <img src="assets/juega-cero.webp" alt="JUEGA CERO, rincón sensorial interior"/>
+            <span class="market-badge warm">0–18 meses</span>
+          </div>
+          <div class="market-body">
+            <h3>JUEGA CERO</h3>
+            <p>Un rincón de suelo para mirar, tocar, alcanzar, desplazarse y explorar sin llenar la habitación.</p>
+            <div class="market-meta"><span>Interior</span><span>2–3 m²</span><span>Baja altura</span></div>
+            <div class="market-bottom"><div><small>Desde</small><strong>$299.000</strong></div><button class="market-choose quick-pack" data-pack="cero" type="button">Ver opción →</button></div>
+          </div>
+        </article>
 
+        <article class="market-card reveal" data-tags="nido interior 1 3 años pikler rampa equilibrio">
+          <div class="market-photo">
+            <img src="assets/juega-nido.webp" alt="JUEGA NIDO, rampa y estructura baja"/>
+            <span class="market-badge mint">1–3 años</span>
+          </div>
+          <div class="market-body">
+            <h3>JUEGA NIDO</h3>
+            <p>Rampa, estructura baja y equilibrio para sus primeros desafíos de movimiento dentro de casa.</p>
+            <div class="market-meta"><span>Interior</span><span>3–4 m²</span><span>Movimiento bajo</span></div>
+            <div class="market-bottom"><div><small>Desde</small><strong>$449.000</strong></div><button class="market-choose quick-pack" data-pack="nido" type="button">Ver opción →</button></div>
+          </div>
+        </article>
 
-	<!-- Clients section start -->
-	<div class="client-section spad">
-		<div class="container">
-			<div id="client-carousel" class="client-slider">
-				<div class="single-brand">
-					<a href="#">
-						<img src="img/clients/1.png" alt="">
-					</a>
-				</div>
-				<div class="single-brand">
-					<a href="#">
-						<img src="img/clients/2.png" alt="">
-					</a>
-				</div>
-				<div class="single-brand">
-					<a href="#">
-						<img src="img/clients/3.png" alt="">
-					</a>
-				</div>
-				<div class="single-brand">
-					<a href="#">
-						<img src="img/clients/4.png" alt="">
-					</a>
-				</div>
-				<div class="single-brand">
-					<a href="#">
-						<img src="img/clients/5.png" alt="">
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Clients section end -->
+        <article class="market-card reveal" data-tags="mini interior exterior 2 6 años muro escalada">
+          <div class="market-photo">
+            <img src="assets/pack-mini.webp" alt="MINI 3, muro compacto"/>
+            <span class="market-badge blue">2–6 años</span>
+          </div>
+          <div class="market-body">
+            <h3>MINI 3</h3>
+            <p>Activa una pared con escalada baja y apoyo motriz manteniendo libre el resto del espacio.</p>
+            <div class="market-meta"><span>Interior / exterior</span><span>4–6 m²</span><span>Escalada baja</span></div>
+            <div class="market-bottom"><div><small>Desde</small><strong>$749.000</strong></div><button class="market-choose quick-pack" data-pack="mini" type="button">Ver opción →</button></div>
+          </div>
+        </article>
 
+        <article class="market-card featured reveal" data-tags="activo interior exterior 3 8 años red espaldera anillas muro">
+          <span class="market-popular">MÁS ELEGIDO</span>
+          <div class="market-photo">
+            <img src="assets/pack-active.webp" alt="ACTIVO 6, escalada, red y espaldera"/>
+            <span class="market-badge violet">3–8 años</span>
+          </div>
+          <div class="market-body">
+            <h3>ACTIVO 6</h3>
+            <p>La transformación más equilibrada: trepa, escalada, suspensión y centro del patio todavía libre.</p>
+            <div class="market-meta"><span>Interior / exterior</span><span>6–10 m²</span><span>Multiactividad</span></div>
+            <div class="market-bottom"><div><small>Desde</small><strong>$1.390.000</strong></div><button class="market-choose quick-pack" data-pack="active" type="button">Ver opción →</button></div>
+          </div>
+        </article>
 
-	<!-- Footer section start -->
-	<footer class="footer-section">
-		<div class="footer-social">
-			<div class="social-links">
-				<a href="#"><i class="fa fa-pinterest"></i></a>
-				<a href="#"><i class="fa fa-linkedin"></i></a>
-				<a href="#"><i class="fa fa-instagram"></i></a>
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-9 offset-lg-3">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="footer-item">
-								<ul>
-									<li><a href="#">Home</a></li>
-									<li><a href="#">About us</a></li>
-									<li><a href="#">Services</a></li>
-									<li><a href="#">Portfolio</a></li>
-									<li><a href="#">Blog</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="footer-item">
-								<ul>
-									<li><a href="#">Terms & Conditions</a></li>
-									<li><a href="#">FAQ</a></li>
-									<li><a href="#">Help Desk</a></li>
-									<li><a href="#">Job Aplications</a></li>
-									<li><a href="#">Site Map</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="footer-item">
-								<ul>
-									<li><a href="#">Privacy</a></li>
-									<li><a href="#">Contact us</a></li>
-									<li><a href="#">Newsletter</a></li>
-									<li><a href="#">Clients Testimonials</a></li>
-									<li><a href="#">FAQ</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+        <article class="market-card reveal" data-tags="aventura exterior 4 10 años circuito deporte monkey bars">
+          <div class="market-photo">
+            <img src="assets/pack-adventure.webp" alt="AVENTURA 10, circuito exterior"/>
+            <span class="market-badge coral">4–10 años</span>
+          </div>
+          <div class="market-body">
+            <h3>AVENTURA 10</h3>
+            <p>Un circuito de patio con más recorrido, estaciones y posibilidades deportivas para niños mayores.</p>
+            <div class="market-meta"><span>Exterior</span><span>10–15 m²</span><span>Circuito</span></div>
+            <div class="market-bottom"><div><small>Desde</small><strong>$2.390.000</strong></div><button class="market-choose quick-pack" data-pack="adventure" type="button">Ver opción →</button></div>
+          </div>
+        </article>
 
-		<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-     <div class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved.  <br>This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></div>
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        <article class="market-card custom-card reveal" data-tags="personalizado interior exterior medida">
+          <div class="custom-visual">TU<br>ESPACIO<br><b>→</b></div>
+          <div class="market-body">
+            <h3>JUEGA A MEDIDA</h3>
+            <p>Para terrazas irregulares, rincones especiales o familias que quieren una combinación distinta.</p>
+            <div class="market-meta"><span>Personalizado</span><span>Cualquier etapa</span></div>
+            <div class="market-bottom"><div><small>Primero</small><strong>vemos tu foto</strong></div><button class="market-choose" id="customUpload" type="button">Subir espacio →</button></div>
+          </div>
+        </article>
+      </div>
 
-	</footer>
-	<!-- Footer section end -->
+      <div class="module-head reveal">
+        <div><span class="kicker">MÓDULOS</span><h3>También puedes ampliar un espacio con el tiempo.</h3></div>
+        <p>Los módulos se cotizan con instalación según soporte, medidas y compatibilidad con el sistema existente.</p>
+      </div>
 
+      <div class="module-grid">
+        <article class="module-card reveal" data-tags="muro escalada mini activo interior exterior">
+          <div class="module-icon coral">●</div><div><strong>Muro de escalada</strong><span>Rutas bajas o travesía</span><b>desde $449 mil</b></div><button data-add-item="Muro de escalada" type="button">＋</button>
+        </article>
+        <article class="module-card reveal" data-tags="espaldera barra interior exterior nido mini activo">
+          <div class="module-icon blue">↥</div><div><strong>Espaldera + barra</strong><span>Trepa y suspensión</span><b>desde $249 mil</b></div><button data-add-item="Espaldera + barra" type="button">＋</button>
+        </article>
+        <article class="module-card reveal" data-tags="red trepa exterior activo aventura">
+          <div class="module-icon violet">#</div><div><strong>Red de trepa</strong><span>Vertical o lateral</span><b>desde $299 mil</b></div><button data-add-item="Red de trepa" type="button">＋</button>
+        </article>
+        <article class="module-card reveal" data-tags="monkey barras exterior aventura activo">
+          <div class="module-icon mint">═</div><div><strong>Monkey bars</strong><span>Recorrido suspendido</span><b>desde $349 mil</b></div><button data-add-item="Monkey bars" type="button">＋</button>
+        </article>
+        <article class="module-card reveal" data-tags="rampa pikler nido interior">
+          <div class="module-icon warm">╱</div><div><strong>Rampa / Pikler</strong><span>Movimiento de baja altura</span><b>desde $299 mil</b></div><button data-add-item="Rampa / Pikler" type="button">＋</button>
+        </article>
+        <article class="module-card reveal" data-tags="aro basket exterior deporte aventura">
+          <div class="module-icon blue">○</div><div><strong>Aro de básquetbol</strong><span>Tablero + montaje</span><b>desde $199 mil</b></div><button data-add-item="Aro de básquetbol" type="button">＋</button>
+        </article>
+        <article class="module-card reveal" data-tags="piso amortiguante interior exterior seguridad">
+          <div class="module-icon mint">▦</div><div><strong>Piso amortiguante</strong><span>Se especifica según uso</span><b>desde $39 mil/m²</b></div><button data-add-item="Piso amortiguante" type="button">＋</button>
+        </article>
+      </div>
 
+      <div class="market-note reveal">
+        <div><strong>Todos los precios son “desde”.</strong><span>La propuesta final depende de medidas, soporte, terminaciones, traslado y zona de caída.</span></div>
+        <a href="#studio">Diseñar desde mi espacio →</a>
+      </div>
+    </div>
+  </section>
 
+  <section id="studio" class="studio-section section-pad">
+    <div class="shell">
+      <div class="studio-head reveal">
+        <div>
+          <span class="kicker kicker-warm">JUEGA STUDIO</span>
+          <h2>Diseña desde tu espacio real.</h2>
+        </div>
+        <p>Sube tu foto, define edad y superficie, elige una base y arma una estimación. La generación fotorealista personalizada será la siguiente capa del producto.</p>
+      </div>
 
-	<!--====== Javascripts & Jquery ======-->
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/isotope.pkgd.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.owl-filter.js"></script>
-	<script src="js/magnific-popup.min.js"></script>
-	<script src="js/circle-progress.min.js"></script>
-	<script src="js/main.js"></script>
-</body>
-</html>
+      <div class="studio-shell reveal">
+        <div class="studio-preview">
+          <div id="dropzone" class="dropzone studio-drop" tabindex="0" role="button" aria-label="Subir una foto">
+            <input id="photoInput" type="file" accept="image/jpeg,image/png,image/webp" hidden/>
+            <div class="upload-mark">＋</div>
+            <strong>Sube una foto de tu espacio</strong>
+            <span>JPG, PNG o WEBP · máx. 10 MB</span>
+          </div>
+          <div class="photo-preview studio-photo" id="photoPreview" hidden>
+            <img id="previewImage" alt="Vista previa de tu espacio"/>
+            <div class="preview-overlay"><span id="previewPackLabel">ACTIVO 6</span><strong>Tu espacio</strong><small>La arquitectura se conserva en la propuesta.</small></div>
+            <button id="changePhoto" type="button" class="mini-button">Cambiar foto</button>
+          </div>
+          <div class="studio-meta">
+            <label>Edad principal<select id="ageSelect"><option>2–4 años</option><option selected>4–7 años</option><option>7–10 años</option><option>10+ años</option></select></label>
+            <label>Superficie útil<select id="spaceSelect"><option>2–4 m²</option><option selected>4–8 m²</option><option>8–15 m²</option><option>15+ m²</option></select></label>
+          </div>
+        </div>
+
+        <div class="studio-controls">
+          <div class="control-head"><div><span class="kicker">BASE</span><h3>¿Con cuál partimos?</h3></div><span class="status-pill"><i></i> estimador</span></div>
+          <div class="config-options">
+            <button class="config-option" type="button" data-pack="cero"><span class="radio"></span><span><strong>JUEGA CERO</strong><small>Rincón sensorial</small></span><b>$299 mil</b></button>
+            <button class="config-option" type="button" data-pack="nido"><span class="radio"></span><span><strong>JUEGA NIDO</strong><small>Primeros movimientos</small></span><b>$449 mil</b></button>
+            <button class="config-option" type="button" data-pack="mini"><span class="radio"></span><span><strong>MINI 3</strong><small>Una pared activa</small></span><b>$749 mil</b></button>
+            <button class="config-option active" type="button" data-pack="active"><span class="radio"></span><span><strong>ACTIVO 6</strong><small>La opción más equilibrada</small></span><b>$1,39 M</b></button>
+            <button class="config-option" type="button" data-pack="adventure"><span class="radio"></span><span><strong>AVENTURA 10</strong><small>Circuito ampliado</small></span><b>$2,39 M</b></button>
+          </div>
+
+          <details class="addons-panel">
+            <summary>Agregar módulos <span>+</span></summary>
+            <div class="addons">
+              <label><input type="checkbox" data-addon="79000"/> Aro + montaje <b>+$79 mil</b></label>
+              <label><input type="checkbox" data-addon="99000"/> Anillas + barra <b>+$99 mil</b></label>
+              <label><input type="checkbox" data-addon="149000"/> Banco / baúl <b>+$149 mil</b></label>
+              <label><input type="checkbox" data-addon="149000"/> Terminación exterior PRO <b>+$149 mil</b></label>
+            </div>
+          </details>
+
+          <div class="estimate-box">
+            <div><span>Estimación de partida</span><small>Se confirma tras revisar medidas, soporte y zona de caída.</small></div>
+            <strong id="estimatePrice">$1.390.000</strong>
+          </div>
+          <button id="renderButton" type="button" class="button button-primary button-full">Ver referencia de esta configuración</button>
+        </div>
+      </div>
+
+      <div id="renderResult" class="render-result reveal" aria-live="polite">
+        <div class="render-image-wrap"><img id="renderImage" src="assets/pack-active.webp" alt="ACTIVO 6"/><span class="badge" id="renderBadge">ACTIVO 6</span></div>
+        <div class="render-copy"><span class="kicker">REFERENCIA</span><h3 id="renderTitle">ACTIVO 6</h3><p id="renderText">Concentra escalada, trepa y suspensión en el perímetro para dejar el centro libre.</p><div class="render-notes"><span>Modular</span><span>Interior / exterior</span><span>Instalación incluida*</span></div><a class="button button-dark" href="#contacto">Quiero una propuesta para mi espacio</a><small>*Sujeto a revisión técnica del lugar.</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="process section-pad">
+    <div class="shell">
+      <div class="section-head centered reveal"><span class="kicker">SIN COMPRAR A CIEGAS</span><h2>De una foto a un espacio instalado.</h2></div>
+      <div class="process-grid">
+        <article class="reveal"><span>01</span><h3>Nos muestras el lugar</h3><p>Foto, edad, medidas aproximadas y cómo quieren usarlo.</p></article>
+        <article class="reveal"><span>02</span><h3>Diseñamos opciones</h3><p>Propuestas visuales compatibles con superficie y presupuesto.</p></article>
+        <article class="reveal"><span>03</span><h3>Revisamos técnicamente</h3><p>Soporte, humedad, anclajes, alturas y zona de caída.</p></article>
+        <article class="reveal"><span>04</span><h3>Fabricamos e instalamos</h3><p>Construimos la opción aprobada y la dejamos lista para usar.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="included section-pad">
+    <div class="shell included-grid">
+      <div class="included-copy reveal"><span class="kicker kicker-warm">QUÉ ESTÁS COMPRANDO</span><h2>Más que madera y presas.</h2><p>El precio incluye la lógica completa del proyecto. Por eso el valor final se confirma después de revisar el lugar.</p></div>
+      <div class="included-list reveal">
+        <div><span>01</span><strong>Diseño</strong><small>configuración para tu espacio</small></div>
+        <div><span>02</span><strong>Fabricación</strong><small>estructura y terminaciones</small></div>
+        <div><span>03</span><strong>Componentes</strong><small>presas, cuerda, herrajes y protección</small></div>
+        <div><span>04</span><strong>Instalación</strong><small>montaje y ajustes en terreno</small></div>
+        <div><span>05</span><strong>Postventa</strong><small>criterio para corregir y mantener</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="seguridad" class="safety section-pad">
+    <div class="shell safety-card reveal">
+      <div class="safety-icon">!</div>
+      <div><span class="kicker kicker-warm">EL RENDER ES DISEÑO, NO CERTIFICACIÓN</span><h2>Primero vemos la posibilidad. Después comprobamos que se pueda construir.</h2><p>Antes de fabricar revisamos soporte, fijaciones, altura de caída, superficie amortiguante, exposición al clima y edad de uso. Si una pared no sirve, se cambia el diseño.</p></div>
+      <div class="safety-points"><span>Soporte</span><span>Anclajes</span><span>Caídas</span><span>Humedad</span><span>Edad</span><span>Mantenimiento</span></div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq section-pad">
+    <div class="shell faq-grid">
+      <div class="section-head reveal"><span class="kicker">PREGUNTAS IMPORTANTES</span><h2>Antes de construir, todo debe quedar claro.</h2></div>
+      <div class="accordion reveal">
+        <details open><summary>¿De verdad sirve un espacio pequeño?<span>+</span></summary><p>Sí. La lógica es aprovechar perímetro y altura, no llenar el suelo. Incluso una pared puede ser un buen punto de partida.</p></details>
+        <details><summary>¿La foto basta para cotizar?<span>+</span></summary><p>Sirve para entregar una propuesta y un rango. El valor definitivo requiere medidas y validación del soporte.</p></details>
+        <details><summary>¿Puedo ampliar el sistema después?<span>+</span></summary><p>Sí. La base se diseña para poder sumar rutas, red, anillas, guardado u otros módulos.</p></details>
+        <details><summary>¿Trabajan fuera del Maule?<span>+</span></summary><p>La etapa piloto se concentra en Maule para controlar fabricación, instalación y postventa. Otros lugares se evalúan caso a caso.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="final-cta section-pad">
+    <div class="shell final-card reveal">
+      <div><span class="kicker kicker-warm">NO NECESITAS SABER QUÉ COMPRAR</span><h2>Mándanos una foto.<br><em>Nosotros vemos las posibilidades.</em></h2><p>Ese es precisamente el trabajo del diseño.</p></div>
+      <button class="button button-yellow button-lg final-upload" id="finalUpload" type="button">Subir foto de mi espacio →</button>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div><img src="assets/logo.svg" alt="JUEGA M2"/><p>Más juego en menos espacio.</p></div>
+    <div class="footer-links"><a href="#inspiracion">Inspiración</a><a href="#packs">Soluciones</a><a href="#seguridad">Seguridad</a></div>
+    <div class="footer-note"><strong>Piloto · Región del Maule</strong><span>Diseño, fabricación e instalación.</span></div>
+  </div>
+  <div class="shell footer-bottom"><span>© <span id="year"></span> JUEGA M²</span><span>Diseñado para aprovechar mejor lo que ya tienes.</span></div>
+</footer>
+<script src="app.js" defer></script>
+</body></html>
